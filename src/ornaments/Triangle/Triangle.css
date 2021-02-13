@@ -1,0 +1,93 @@
+.triangle1 {
+  border-bottom: 80px solid #2D3142;
+  border-right: 40px solid transparent;
+  border-left: 40px solid transparent;
+  transform: rotate(0deg);
+  position: absolute;
+  bottom: 3rem;
+  right: 1rem;
+  overflow: hidden;
+}
+
+.triangle2 {
+  border-top: 70px solid #2D3142;
+  border-right: 40px solid transparent;
+  border-left: 40px solid transparent;
+  transform: rotate(-1deg);
+  position: absolute;
+  bottom: 1rem;
+  right: 5rem;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .triangle1 {
+    border-bottom: 120px solid #2D3142;
+    border-right: 70px solid transparent;
+    border-left: 70px solid transparent;
+    bottom: 4rem;
+    right: 1rem;
+  }
+
+  .triangle2 {
+    border-top: 120px solid #2D3142;
+    border-right: 70px solid transparent;
+    border-left: 70px solid transparent;
+    bottom: 1rem;
+    right: 8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .triangle1 {
+    border-bottom: 140px solid #2D3142;
+    border-right: 80px solid transparent;
+    border-left: 80px solid transparent;
+    bottom: 4rem;
+    right: 10rem;
+  }
+
+  .triangle2 {
+    border-top: 140px solid #2D3142;
+    border-right: 80px solid transparent;
+    border-left: 80px solid transparent;
+    bottom: 1rem;
+    right: 17.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .triangle1 {
+    border-bottom: 140px solid #2D3142;
+    border-right: 80px solid transparent;
+    border-left: 80px solid transparent;
+    bottom: 4rem;
+    right: 11.5rem;
+  }
+
+  .triangle2 {
+    border-top: 140px solid #2D3142;
+    border-right: 80px solid transparent;
+    border-left: 80px solid transparent;
+    bottom: 1rem;
+    right: 19rem;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .triangle1 {
+    border-bottom: 140px solid #2D3142;
+    border-right: 80px solid transparent;
+    border-left: 80px solid transparent;
+    bottom: 4rem;
+    right: 13rem;
+  }
+
+  .triangle2 {
+    border-top: 140px solid #2D3142;
+    border-right: 80px solid transparent;
+    border-left: 80px solid transparent;
+    bottom: 1rem;
+    right: 20.5rem;
+  }
+}

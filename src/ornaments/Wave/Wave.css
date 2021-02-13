@@ -1,0 +1,32 @@
+.smallLine {
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  transform: translate(-25%) scale(0.5)
+}
+
+.smallLine1 {
+  background: linear-gradient(45deg, transparent, transparent 40%, #2D3142 49%, transparent 60%);
+}
+.smallLine2 {
+  background: linear-gradient(-45deg, transparent, transparent 40%, #2D3142 49%, transparent 60%);
+}
+
+.smallLine {
+  background-size: 20px 20px;
+}
+
+.holder {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  bottom: 4.5rem;
+  left: 5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .holder {
+    left: 10rem;
+    bottom: 5rem;
+  }
+}
