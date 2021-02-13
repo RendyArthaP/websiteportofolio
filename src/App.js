@@ -9,7 +9,7 @@ function App() {
     <div className="flex h-screen items-center">      
       <Circle />
       <Dot />
-      <div className="flex flex-col items-center text-center w-full lg:flex-row-reverse lg:justify-center border border-profile">
+      <div className="flex flex-col items-center text-center w-full lg:flex-row-reverse lg:justify-around lg:px-16">
         <div className="border-profile border-2 rounded-full w-56 h-56">
           <img 
             src={imageProfile} 
@@ -27,9 +27,9 @@ function App() {
             </span>
           </a>
         </div>
-        <Triangle />
-        <Wave />
       </div>
+      <Triangle />
+      <Wave />
     </div>
   );
 }
