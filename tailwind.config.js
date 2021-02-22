@@ -6,13 +6,15 @@ module.exports = {
     backgroundColor: theme => ({
       "button": "#EF8354",
       "navbar": "#2D3142",
-      "content": "#4F5D75"
+      "content": "#4F5D75",
+      "white": "#FFFFFF"
     }),
      textColor: {
       "basic": "#505050",
       "content": "#BFC0C0",
       "title": "#4F5D75",
-      "white": "#FFFFFF"
+      "white": "#FFFFFF",
+      "button": "#EF8354"
      },
      borderColor: theme => ({
       "profile": "#4F5D75"
