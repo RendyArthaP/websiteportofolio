@@ -29,9 +29,9 @@ const Navbar = () => {
 
   const blogActive = () => {
     if(location.pathname === '/blog') {
-      return "mx-4 font-semibold font-poppins border-b border-content text-base text-content"
+      return "ml-4 font-semibold font-poppins border-b border-content text-base text-content"
     } else {
-      return "mx-4 font-medium font-poppins text-base text-content"
+      return "ml-4 font-medium font-poppins text-base text-content"
     }
   }
 
