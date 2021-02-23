@@ -4,13 +4,15 @@ import Github from '../icons/Github'
 import Instagram from '../icons/Instagram'
 import Linkedin from '../icons/Linkedin'
 import imageProfile from '../img/profile1.png'
+import Skills from '../components/Skills'
+import WorkExperience from '../components/WorkExperience'
 
 const About = () => {
   return (
     <div>
       <Navbar />
       <div className="flex flex-col items-center text-center pt-10 lg:flex-row lg:justify-between px-4 md:px-6 lg:px-16 xl:px-20 2xl:px-40">
-        <div className="">
+        <div className="2xl:pt-6">
           <div className="border-profile border-2 rounded-full w-56 h-56">
             <img 
               src={imageProfile} 
@@ -27,13 +29,19 @@ const About = () => {
           </div>
           <div className="flex flex-row my-1 self-center lg:self-start lg:mx-4">
             <div className="mr-2">
-              <Github />
+              <a href="https://github.com/RendyArthaP">
+                <Github />
+              </a>
             </div>
             <div className="mx-2">
-              <Instagram />
+              <a href="https://instagram.com/rendyartha">
+                <Instagram />
+              </a>
             </div>
             <div className="ml-2">
-              <Linkedin />
+              <a href="https://www.linkedin.com/in/rendyarthap/">
+                <Linkedin />
+              </a>
             </div>
           </div>
           <div className="lg:px-4 flex flex-col">
@@ -48,6 +56,10 @@ const About = () => {
             </span>
           </div>
         </div>
+      </div>
+      <div className="">
+        <WorkExperience />
+        <Skills />
       </div>
     </div>
   )
