@@ -17,7 +17,8 @@ module.exports = {
       "button": "#EF8354"
      },
      borderColor: theme => ({
-      "profile": "#4F5D75"
+      "profile": "#4F5D75",
+      "content": "#BFC0C0"
      }),
      fontFamily: {
       poppins: ["Poppins", "sans-serif"],
