@@ -20,7 +20,11 @@ const About = () => {
               className="rounded-full self-center -mt-4"
             />
           </div>
-          <button className="bg-button text-white p-2 font-poppins my-4 rounded">Download CV</button>
+          <button 
+            className="bg-button mt-4 hover:bg-white hover:text-button focus:outline-none w-32 h-11 text-center rounded py-2 my-1 shadow-2xl font-poppins text-white text-base"
+          >
+            Download CV
+          </button>
         </div>
         <div className="flex flex-col lg:w-8/12 xl:w-9/12">
           <div className="mx-4 lg:text-left">
@@ -57,7 +61,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="">
+      <div className="flex flex-col md:flex-row md:justify-between px-4 md:px-6">
         <WorkExperience />
         <Skills />
       </div>
