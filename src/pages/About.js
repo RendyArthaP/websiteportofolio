@@ -22,7 +22,7 @@ const About = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col items-center text-center pt-10 lg:flex-row lg:justify-between px-4 md:px-6 lg:px-16 xl:px-20 2xl:px-40">
+      <div className="flex flex-col items-center text-center pt-10 lg:flex-row lg:justify-between px-4 md:px-6 lg:px-16 xl:px-32 2xl:px-64">
         <div className="2xl:pt-6">
           <div className="border-profile border-2 rounded-full w-56 h-56">
             <img 
@@ -72,7 +72,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row px-4 md:px-6">
+      <div className="flex flex-col md:flex-row px-4 md:px-6 lg:px-16 xl:px-32 2xl:px-64">
         <WorkExperience />
         <Skills />
       </div>
