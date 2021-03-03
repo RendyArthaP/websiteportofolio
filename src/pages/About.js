@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import Navbar from '../components/Navbar'
 import Github from '../icons/Github'
 import Instagram from '../icons/Instagram'
@@ -6,8 +6,19 @@ import Linkedin from '../icons/Linkedin'
 import imageProfile from '../img/profile1.png'
 import Skills from '../components/Skills'
 import WorkExperience from '../components/WorkExperience'
+import { UserContext } from '../context/UserContext'
+import { useHistory } from 'react-router-dom'
 
 const About = () => {
+  const history = useHistory()
+  const {isLogin, setIsLogin} = useContext(UserContext)
+
+  useEffect(() => {
+    if(isLogin === false) {
+      history.push("/")
+    }
+  }, [])
+
   return (
     <div>
       <Navbar />
@@ -28,7 +39,7 @@ const About = () => {
         </div>
         <div className="flex flex-col lg:w-8/12 xl:w-9/12">
           <div className="mx-4 lg:text-left">
-            <h1 className="font-bold font-poppins text-xl text-basic my-1 lg:text-3xl lg:w-80 xl:w-full">Hello, my name is Rendy Artha Prawira</h1>
+            <h1 className="font-bold font-poppins text-xl text-basic my-1 lg:text-3xl lg:w-80 xl:w-full">Hello, i am Rendy Artha Prawira</h1>
             <h2 className="font-bold font-poppins text-md text-title my-1 lg:text-xl">Video Editor to be Developer</h2>
           </div>
           <div className="flex flex-row my-1 self-center lg:self-start lg:mx-4">
@@ -61,7 +72,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row md:justify-between px-4 md:px-6">
+      <div className="flex flex-col md:flex-row px-4 md:px-6">
         <WorkExperience />
         <Skills />
       </div>

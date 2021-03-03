@@ -3,7 +3,7 @@ import {workExperiences} from '../data/DataAbout';
 
 const Skills = () => {
   return (
-    <div className="py-4 w-full">
+    <div className="py-4 w-full md:w-1/2">
       <div className="bg-content h-12">
         <h1 className="font-poppins font-semibold text-xl text-content text-center pt-2 tracking-widest">Skills</h1>
       </div>

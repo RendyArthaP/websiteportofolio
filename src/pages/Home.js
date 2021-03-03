@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useHistory } from 'react-router-dom';
+import { UserContext } from '../context/UserContext';
 import imageProfile from '../img/profile1.png'
 import Circle from '../ornaments/Circle';
 import Dot from '../ornaments/Dot';
@@ -18,9 +19,12 @@ const Home = () => {
   //     layer.style.transform = `translateX(${Math.floor(x)}px) translateY(${Math.floor(y)}px)`
   //   })
   // }
+  
+  const {isLogin, setIsLogin} = useContext(UserContext)
   const history = useHistory();
 
   const handleLogin = () => {
+    setIsLogin(true)
     history.push("/about")
   }
 
@@ -31,7 +35,7 @@ const Home = () => {
           <div className="border-profile border-2 rounded-full w-56 h-56">
             <img 
               src={imageProfile} 
-              alt="profile1" 
+              alt="profile2" 
               className="rounded-full self-center -mt-4"
             />
           </div>

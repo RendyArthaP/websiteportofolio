@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <div className ="flex sticky top-0 flex-row justify-between items-center bg-navbar h-14 px-4 md:px-6 lg:px-16 xl:px-20 2xl:px-40">
-      <Link to="/">
+      <Link to="/about">
         <h1 className="font-bold font-poppins text-xl text-content">RENDYARTHA</h1>
       </Link>
       <ul className="hidden md:flex md:flex-row">
