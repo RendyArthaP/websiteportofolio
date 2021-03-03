@@ -19,8 +19,8 @@ const Home = () => {
   //     layer.style.transform = `translateX(${Math.floor(x)}px) translateY(${Math.floor(y)}px)`
   //   })
   // }
-  
-  const {isLogin, setIsLogin} = useContext(UserContext)
+
+  const { setIsLogin } = useContext(UserContext)
   const history = useHistory();
 
   const handleLogin = () => {
@@ -35,7 +35,7 @@ const Home = () => {
           <div className="border-profile border-2 rounded-full w-56 h-56">
             <img 
               src={imageProfile} 
-              alt="profile2" 
+              alt="profile1" 
               className="rounded-full self-center -mt-4"
             />
           </div>

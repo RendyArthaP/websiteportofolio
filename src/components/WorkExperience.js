@@ -7,13 +7,21 @@ const WorkExperience = () => {
       <div className="bg-content h-12">
         <h1 className="font-poppins font-semibold text-xl text-content text-center pt-2 tracking-widest">Work Experience</h1>
       </div>
-      <div className="bg-content mt-1">
+      <div className="bg-content mt-1 md:mb-4">
         {workExperiences.map((work) => 
-          <div className="flex flex-col p-3 tree-line" key={work.id}>
-            <h1 className="font-montserrat font-medium text-lg text-content">{work.titleJob}</h1>
-            <span className="font-montserrat font-normal text-content text-sm">{work.nameCompany}</span>
-            <span className="font-montserrat font-normal text-content text-sm">{work.howLong}</span>
-          </div>
+          <ul 
+            className="flex flex-col p-3" 
+            key={work.id}
+          >
+            <li>
+              <div className="flex flex-col md:flex-row md:justify-between md:items-center">
+                <h1 className="font-montserrat font-bold text-lg text-content">{work.titleJob}</h1>
+                <span className="font-montserrat font-normal text-content text-sm">{work.howLong}</span>
+              </div>
+              <span className="font-montserrat font-normal text-content text-sm">{work.nameCompany}</span>
+              <p className="font-montserrat font-light text-content text-xs py-2">{work.description}</p>
+            </li>
+          </ul>
         )}
       </div>
     </div>
