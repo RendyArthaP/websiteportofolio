@@ -5,9 +5,16 @@ const WorkExperience = () => {
   return (
     <div className="pt-4 mr-4 w-full md:w-1/2">
       <div className="bg-content h-12 rounded">
-        <h1 className="font-poppins font-semibold text-xl text-content text-center pt-2 tracking-widest">Work Experience</h1>
+        <h1 
+          className="font-poppins font-semibold text-xl text-content text-center pt-2 tracking-widest"
+        >
+          Work Experience
+        </h1>
       </div>
-      <div className="bg-content mt-1 rounded md:mb-4" style={{height:"430px"}}>
+      <div 
+        className="bg-content mt-1 rounded h-auto md:mb-4 overflow-y-scroll" 
+        style={{height:"430px"}}
+      >
         <ul>  
           {workExperiences.map((work) => (      
             <li

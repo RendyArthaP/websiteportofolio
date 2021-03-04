@@ -5,9 +5,16 @@ const Skills = () => {
   return (
     <div className="py-4 w-full md:w-1/2">
       <div className="bg-content h-12 rounded">
-        <h1 className="font-poppins font-semibold text-xl text-content text-center pt-2 tracking-widest">Skills</h1>
+        <h1 
+          className="font-poppins font-semibold text-xl text-content text-center pt-2 tracking-widest"
+        >
+          Skills
+        </h1>
       </div>
-      <div className="bg-content mt-1 rounded md:mb-4" style={{height:"430px"}}>
+      <div 
+        className="bg-content mt-1 rounded md:mb-4 overflow-y-scroll" 
+        style={{height:"430px", maxHeight:"430px"}}
+      >
         <h1 className="font-montserrat font-bold text-lg text-content p-3 pb-0">
           Languange Programming
         </h1>
@@ -25,10 +32,20 @@ const Skills = () => {
                 />
                 <h1 className="ml-4 font-montserrat font-normal text-lg text-content">{languange.nameLanguange}</h1>
               </div>
+              <div className="flex flex-col pt-2">
+                {languange.descriptions.map((description, index) => (
+                  <div key={index}>
+                    <span 
+                      className="font-montserrat font-normal text-content text-xs"
+                    >
+                      {description}
+                    </span>
+                  </div> 
+                ))}
+              </div>
             </li>
           ))}
         </ul>
-        
         <h1 className="font-montserrat font-bold text-lg text-content px-3">
           Framework
         </h1>
@@ -44,7 +61,11 @@ const Skills = () => {
                   alt="react" 
                   className="w-10 h-10"
                 />
-                <h1 className="ml-4 font-montserrat font-normal text-lg text-content">{framework.nameFramework}</h1>
+                <h1 
+                  className="ml-4 font-montserrat font-normal text-lg text-content"
+                >
+                  {framework.nameFramework}
+                </h1>
               </div>
             </li>
           ))}

@@ -33,6 +33,17 @@ export const languangePrograms =[
     id: 0,
     image: ImageJS,
     nameLanguange: "Javascript",
+    descriptions: [ 
+      "• Looping data",
+      "• Javascript DOM",
+      "• Recursive",
+      "• Regex",
+      "• OOP",
+      "• ES6",
+      "• Statement & Conditional",
+      "• Asynchronous & Synchronous",
+      "• Function, Arrow Function, & Methods"
+    ]
   }
 ]
 
