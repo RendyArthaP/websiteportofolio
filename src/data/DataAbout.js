@@ -1,3 +1,9 @@
+import ImageJS from '../img/skills/javascript.png';
+import ReactJS from '../img/skills/react.png';
+import VueJS from '../img/skills/vue.png';
+import Tailwind from '../img/skills/tailwind.png';
+import Bootstrap from '../img/skills/bootstrap.png'
+
 export const workExperiences = [
   {
     id: 0,
@@ -22,6 +28,33 @@ export const workExperiences = [
   }
 ]
 
-export const skills =[
-  {}
+export const languangePrograms =[ 
+  {
+    id: 0,
+    image: ImageJS,
+    nameLanguange: "Javascript",
+  }
+]
+
+export const frameworkPrograms = [
+  {
+    id:0,
+    image: ReactJS,
+    nameFramework: "React JS"
+  },
+  {
+    id:1,
+    image: VueJS,
+    nameFramework: "Vue JS"
+  },
+  {
+    id:2,
+    image: Tailwind,
+    nameFramework: "Tailwind CSS"
+  },
+  {
+    id:3,
+    image: Bootstrap,
+    nameFramework: "Bootstrap CSS"
+  }
 ]
