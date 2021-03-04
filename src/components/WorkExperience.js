@@ -1,5 +1,6 @@
 import React from 'react'
 import {workExperiences} from '../data/DataAbout';
+import ListWorkExperience from './ListWorkExperience';
 
 const WorkExperience = () => {
   return (
@@ -15,21 +16,7 @@ const WorkExperience = () => {
         className="bg-content mt-1 rounded h-auto md:mb-4 overflow-y-scroll" 
         style={{height:"430px"}}
       >
-        <ul>  
-          {workExperiences.map((work) => (      
-            <li
-              className="flex flex-col py-2 px-3" 
-              key={work.id}
-            >
-              <div className="flex flex-col md:flex-row md:justify-between md:items-center">
-                <h1 className="font-montserrat font-bold text-lg text-content">{work.titleJob}</h1>
-                <span className="font-montserrat font-normal text-content text-sm">{work.howLong}</span>
-              </div>
-              <span className="font-montserrat font-normal text-content text-sm">{work.nameCompany}</span>
-              <p className="font-montserrat font-normal text-content text-xs py-2">{work.description}</p>
-            </li>
-          ))}
-        </ul>
+        <ListWorkExperience workExperiences={workExperiences}/>
       </div>
     </div>
   )

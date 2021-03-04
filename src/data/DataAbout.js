@@ -51,21 +51,51 @@ export const frameworkPrograms = [
   {
     id:0,
     image: ReactJS,
-    nameFramework: "React JS"
+    nameFramework: "React JS",
+    descriptions: [
+      "• Mapping data",
+      "• UseState",
+      "• UseEffect",
+      "• UseContext",
+      "• Reusable component",
+      "• Fetch data with API using useEffect",
+      "• React router",
+      "• React helmet",
+      "• Lifecycle component"
+    ]
   },
   {
     id:1,
     image: VueJS,
-    nameFramework: "Vue JS"
+    nameFramework: "Vue JS",
+    descriptions: [
+      "• Looping with v-for",
+      "• Fetch data with mounted lifecycle",
+      "• Conditional with v-if, and v-else",
+      "• Reusable Component",
+      "• Vue router",
+      "• State management with vuex"
+    ]
   },
   {
     id:2,
     image: Tailwind,
-    nameFramework: "Tailwind CSS"
+    nameFramework: "Tailwind CSS",
+    descriptions: [
+      "• Responsive web design",
+      "• Made design with flexbox",
+      "• Slicing HTML and CSS with tailwind",
+      "• Using tailwind config for library",
+    ]
   },
   {
     id:3,
     image: Bootstrap,
-    nameFramework: "Bootstrap CSS"
+    nameFramework: "Bootstrap CSS",
+    descriptions: [
+      "• Responsive web design",
+      "• Made design with flexbox",
+      "• Slicing HTML and CSS with bootstrap",
+    ]
   }
 ]
