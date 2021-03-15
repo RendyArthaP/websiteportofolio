@@ -8,10 +8,11 @@ import Skills from '../components/Skills'
 import WorkExperience from '../components/WorkExperience'
 import { UserContext } from '../context/UserContext'
 import { useHistory } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 
 const About = () => {
   const history = useHistory()
-  const {isLogin, setIsLogin} = useContext(UserContext)
+  const {isLogin} = useContext(UserContext)
 
   useEffect(() => {
     if(isLogin === false) {
@@ -21,6 +22,11 @@ const About = () => {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8"/>
+        <title>About - Rendy Artha</title>
+        <meta name="description" content="about"/>
+      </Helmet>
       <Navbar />
       <div className="flex flex-col items-center text-center pt-10 lg:flex-row lg:justify-between px-4 md:px-6 lg:px-16 xl:px-32 2xl:px-64">
         <div className="2xl:pt-6">
