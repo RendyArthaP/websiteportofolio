@@ -9,27 +9,18 @@ import PageNotFound from "./pages/PageNotFound";
 
 const App = () => {
   const [isLogin, setIsLogin] = useState(false);
+
   return (
     <Router>
-      <Switch>
-        <UserContext.Provider value={{ isLogin, setIsLogin }}>
-          <Route exact path="/">
-            <Home /> 
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/portofolio" component={Portofolio}>
-            <Portofolio />
-          </Route>
-          <Route path="/blog">
-            <Blog />
-          </Route>
-          <Route>
-            <PageNotFound />
-          </Route>
-        </UserContext.Provider>
-      </Switch>
+      <UserContext.Provider value={{ isLogin, setIsLogin }}>
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route path="/about" component={About} />
+          <Route path="/portofolio" component={Portofolio} />
+          <Route path="/blog" component={Blog} />
+          <Route component={PageNotFound}/>
+        </Switch>
+      </UserContext.Provider>
     </Router>
   );
 };
