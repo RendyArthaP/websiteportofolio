@@ -5,6 +5,7 @@ import Blog from "./pages/Blog";
 import Home from "./pages/Home";
 import Portofolio from "./pages/Portofolio";
 import { UserContext } from "./context/UserContext";
+import PageNotFound from "./pages/PageNotFound";
 
 const App = () => {
   const [isLogin, setIsLogin] = useState(false);
@@ -12,10 +13,21 @@ const App = () => {
     <Router>
       <Switch>
         <UserContext.Provider value={{ isLogin, setIsLogin }}>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/portofolio" component={Portofolio} />
-          <Route path="/blog" component={Blog} />
+          <Route exact path="/">
+            <Home /> 
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/portofolio" component={Portofolio}>
+            <Portofolio />
+          </Route>
+          <Route path="/blog">
+            <Blog />
+          </Route>
+          <Route>
+            <PageNotFound />
+          </Route>
         </UserContext.Provider>
       </Switch>
     </Router>

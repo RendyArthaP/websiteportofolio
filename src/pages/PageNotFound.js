@@ -1,9 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const PageNotFound = () => {
   return (
     <div>
-      404 Page Not Found
+      <h1>404</h1>
+      <h2>Page not found!</h2>
+      <span>
+        Just back to our home! 
+        <Link to="/about">Home</Link>
+      </span>
     </div>
   )
 }
