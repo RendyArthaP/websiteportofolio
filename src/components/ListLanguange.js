@@ -17,7 +17,7 @@ const ListLanguange = ({languangePrograms}) => {
               />
               <h1 className="ml-4 font-montserrat font-normal text-lg text-content">{languange.nameLanguange}</h1>
             </div>
-            <div className="flex flex-col pt-2">
+            {/* <div className="flex flex-col pt-2">
               {languange.descriptions.map((description, index) => (
                 <div key={index}>
                   <span 
@@ -27,7 +27,7 @@ const ListLanguange = ({languangePrograms}) => {
                   </span>
                 </div> 
               ))}
-            </div>
+            </div> */}
           </li>
         ))}
       </ul>

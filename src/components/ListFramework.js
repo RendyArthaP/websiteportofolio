@@ -21,7 +21,7 @@ const ListFramework = ({frameworkPrograms}) => {
                 {framework.nameFramework}
               </h1>
             </div>
-            <div className="flex flex-col pt-2">
+            {/* <div className="flex flex-col pt-2">
               {framework.descriptions.map((description, index) => (
                 <div key={index}>
                   <span 
@@ -31,7 +31,7 @@ const ListFramework = ({frameworkPrograms}) => {
                   </span>
                 </div> 
               ))}
-            </div>
+            </div> */}
           </li>
         ))}
         </ul>
