@@ -1,18 +1,15 @@
-import React, { useContext, useEffect } from 'react'
+import React from 'react'
 import Navbar from '../components/Navbar'
-import { UserContext } from '../context/UserContext'
 import { useHistory } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
 const Blog = () => {
   const history = useHistory()
-  const { isLogin } = useContext(UserContext)
+  const isLoggedIn = JSON.parse(localStorage.getItem("isLogin"))
 
-  useEffect(() => {
-    if(isLogin === false) {
-      history.push("/")
-    }
-  }, [])
+  if(!isLoggedIn) {
+    history.push("/")
+  }
 
   return (
     <div>

@@ -1,6 +1,5 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { useHistory } from 'react-router-dom';
-import { UserContext } from '../context/UserContext';
 import imageProfile from '../img/profile1.png'
 import Circle from '../ornaments/Circle';
 import Dot from '../ornaments/Dot';
@@ -20,11 +19,10 @@ const Home = () => {
   //   })
   // }
 
-  const { setIsLogin } = useContext(UserContext)
   const history = useHistory();
 
   const handleLogin = () => {
-    setIsLogin(true)
+    localStorage.setItem("isLogin", true)
     history.push("/about")
   }
 

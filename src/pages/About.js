@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, {useEffect} from 'react'
 import Navbar from '../components/Navbar'
 import Github from '../icons/Github'
 import Instagram from '../icons/Instagram'
@@ -6,16 +6,15 @@ import Linkedin from '../icons/Linkedin'
 import imageProfile from '../img/profile1.png'
 import Skills from '../components/Skills'
 import WorkExperience from '../components/WorkExperience'
-import { UserContext } from '../context/UserContext'
 import { useHistory } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
 const About = () => {
   const history = useHistory()
-  const {isLogin} = useContext(UserContext)
+  const isLoggedIn = JSON.parse(localStorage.getItem("isLogin"))
 
   useEffect(() => {
-    if(isLogin === false) {
+    if(!isLoggedIn) {
       history.push("/")
     }
   }, [])
