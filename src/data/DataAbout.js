@@ -1,4 +1,5 @@
 import ImageJS from '../img/skills/javascript.png';
+import NodeJs from '../img/skills/node-express.png';
 import ReactJS from '../img/skills/react.png';
 import VueJS from '../img/skills/vue.png';
 import Tailwind from '../img/skills/tailwind.png';
@@ -28,7 +29,7 @@ export const workExperiences = [
   }
 ]
 
-export const languangePrograms =[ 
+export const languangePrograms = [ 
   {
     id: 0,
     image: ImageJS,
@@ -44,7 +45,20 @@ export const languangePrograms =[
       "• Asynchronous & Synchronous",
       "• Function, Arrow Function, & Methods"
     ]
-  }
+  },
+  {
+    id: 1,
+    image: NodeJs,
+    nameLanguange: "Node & Express JS",
+    descriptions: [ 
+      "• MVC Concepts",
+      "• Route",
+      "• Controllers",
+      "• Connect to database SQL or MongoDB",
+      "• Make an API",
+    ]
+  },
+
 ]
 
 export const frameworkPrograms = [
