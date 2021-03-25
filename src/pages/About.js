@@ -48,17 +48,17 @@ const About = () => {
             <h2 className="font-bold font-poppins text-md text-title my-1 lg:text-xl">Video Editor to be Developer</h2>
           </div>
           <div className="flex flex-row my-1 self-center lg:self-start lg:mx-4">
-            <div className="mr-2">
+            <div className="mr-2 transform hover:scale-150 transition duration-100">
               <a href="https://github.com/RendyArthaP">
                 <Github />
               </a>
             </div>
-            <div className="mx-2">
+            <div className="mx-2 transform hover:scale-150 transition duration-100">
               <a href="https://instagram.com/rendyartha">
                 <Instagram />
               </a>
             </div>
-            <div className="ml-2">
+            <div className="ml-2 transform hover:scale-150 transition duration-100">
               <a href="https://www.linkedin.com/in/rendyarthap/">
                 <Linkedin />
               </a>
