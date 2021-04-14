@@ -56,10 +56,10 @@ const Home = () => {
         <div className="layer" data-speed="5">
           <Dot />
         </div>
-        <div className="layer" data-speed="2">
+        <div className="layer hidden md:flex" data-speed="2">
           <Triangle />
         </div>
-        <div className="layer" data-speed="6">
+        <div className="layer hidden md:flex" data-speed="6">
           <Wave />
         </div>
       </div>

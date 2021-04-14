@@ -8,6 +8,7 @@ import Skills from '../components/Skills'
 import WorkExperience from '../components/WorkExperience'
 import { useHistory } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
+import RendyCV from '../img/cv/rendycv.pdf'
 
 const About = () => {
   const history = useHistory()
@@ -36,16 +37,29 @@ const About = () => {
               className="rounded-full self-center -mt-4"
             />
           </div>
-          <button 
-            className="bg-button mt-4 hover:bg-white hover:text-button focus:outline-none w-32 h-11 text-center rounded py-2 my-1 shadow-2xl font-poppins text-white text-base"
+          <a 
+            href={RendyCV} 
+            download="cv-rendy"
           >
-            Download CV
-          </button>
+            <button 
+              className="bg-button mt-3 hover:bg-white hover:text-button focus:outline-none w-32 h-11 text-center rounded py-2 my-1 shadow-2xl font-poppins text-white text-base"
+            >
+              Download CV
+            </button>
+          </a>
         </div>
         <div className="flex flex-col lg:w-8/12 xl:w-9/12">
           <div className="mx-4 lg:text-left">
-            <h1 className="font-bold font-poppins text-xl text-basic my-1 lg:text-3xl lg:w-80 xl:w-full">Hello, i am Rendy Artha Prawira</h1>
-            <h2 className="font-bold font-poppins text-md text-title my-1 lg:text-xl">Video Editor to be Developer</h2>
+            <h1 
+              className="font-bold font-poppins text-xl text-basic my-1 lg:text-3xl lg:w-80 xl:w-full"
+            >
+              Hello, i am Rendy Artha Prawira
+            </h1>
+            <h2 
+              className="font-bold font-poppins text-md text-title my-1 lg:text-xl"
+            >
+              Video Editor to be Developer
+            </h2>
           </div>
           <div className="flex flex-row my-1 self-center lg:self-start lg:mx-4">
             <div className="mr-2 transform hover:scale-150 transition duration-100">
@@ -65,7 +79,11 @@ const About = () => {
             </div>
           </div>
           <div className="lg:px-4 flex flex-col">
-            <h2 className="font-bold font-poppins text-md text-title my-1 lg:text-xl border-b border-basic pt-4 lg:text-left">About Me</h2>
+            <h2 
+              className="font-bold font-poppins text-md text-title my-1 lg:text-xl border-b border-basic pt-4 lg:text-left"
+            >
+              About Me
+            </h2>
             <span className="text-left font-montserrat font-light text-base">
               Glad to know that you guys clicking my website, and i just wanna say thank you for 
               appreciate it! As you see my profile, i was graduate at 2016 as Communication Science 
