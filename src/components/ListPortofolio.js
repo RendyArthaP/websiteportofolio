@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 
 const ListPortofolio = ({item}) => {
   const [readMore, setReadMore] = useState(true)
-  const handleReadMore = item.description.slice(0, 150)
+  const handleReadMore = item.description.slice(0, 100)
   const handleLiveServer = () => {
     console.log(item.linkDeploy)
   }
 
   return (
     <div 
-      className="p-4 bg-content rounded flex flex-col justify-between my-2 w-64 h-auto md:mr-14 lg:mr-2" 
+      className="p-4 bg-content rounded flex flex-col my-2 w-full h-auto md:w-64 md:mr-14 lg:mr-10 2xl:mr-5" 
     >
       <img 
         src={item.imagePortofolio} 
@@ -32,7 +32,7 @@ const ListPortofolio = ({item}) => {
         href={item.linkDeploy}
         className="bg-button mx-auto w-full text-sm text-white font-montserrat p-1 rounded text-center mt-2"
       >
-        Live Server
+        Demo Apps
       </a>
     </div>
   )

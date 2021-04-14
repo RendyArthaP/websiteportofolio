@@ -35,7 +35,7 @@ const Portofolio = () => {
           Portofolio
         </h1>
         <div 
-          className="flex flex-col flex-wrap md:flex-row"
+          className="flex flex-col flex-wrap md:flex-row md:justify-center"
         >
           {!!dataPorto && dataPorto.map((item) => (
             <ListPortofolio 
