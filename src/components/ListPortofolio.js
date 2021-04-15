@@ -9,7 +9,7 @@ const ListPortofolio = ({item}) => {
 
   return (
     <div 
-      className="p-4 bg-content rounded flex flex-col my-2 w-full h-auto md:w-64 md:mx-6" 
+      className="p-4 bg-content rounded flex flex-col my-2 w-full h-auto md:w-64 md:mx-6 lg:mx-5" 
     >
       <img 
         src={item.imagePortofolio} 

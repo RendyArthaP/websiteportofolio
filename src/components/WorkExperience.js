@@ -13,7 +13,7 @@ const WorkExperience = () => {
         </h1>
       </div>
       <div 
-        className="bg-content mt-1 rounded h-auto md:mb-4 overflow-y-scroll" 
+        className="bg-content mt-1 rounded h-auto md:mb-4 overflow-y-scroll lg:overflow-hidden" 
         style={{height:"430px"}}
       >
         <ListWorkExperience workExperiences={workExperiences}/>

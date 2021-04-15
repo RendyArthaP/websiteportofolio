@@ -19,7 +19,9 @@ const Blog = () => {
         <meta name="description" content="blog"/>
       </Helmet>
       <Navbar />
-      <h1>Blog</h1>
+      <div className="flex py-80 h-full">
+        <h1 className="text-2xl font-poppins font-bold m-auto">Coming Soon...</h1>
+      </div>
     </div>
   )
 }

@@ -14,7 +14,7 @@ const Skills = () => {
         </h1>
       </div>
       <div 
-        className="bg-content mt-1 rounded md:mb-4 overflow-y-scroll" 
+        className="bg-content mt-1 rounded md:mb-4" 
         style={{height:"430px", maxHeight:"430px"}}
       >
         <h1 className="font-montserrat font-bold text-lg text-content p-3 pb-0">
