@@ -1,6 +1,6 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom';
-import imageProfile from '../img/profile1.png'
+import imageProfile from '../assets/img/profile1.png'
 import Circle from '../assets/ornaments/Circle';
 import Dot from '../assets/ornaments/Dot';
 import Triangle from '../assets/ornaments/Triangle/Triangle';

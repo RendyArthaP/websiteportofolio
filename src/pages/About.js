@@ -8,7 +8,7 @@ import Skills from '../components/Skills'
 import WorkExperience from '../components/WorkExperience'
 import { useHistory } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
-import RendyCV from '../img/cv/rendycv.pdf'
+import RendyCV from '../assets/img/cv/rendycv.pdf'
 
 const About = () => {
   const history = useHistory()

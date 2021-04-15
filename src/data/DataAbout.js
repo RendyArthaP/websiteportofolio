@@ -1,9 +1,9 @@
-import ImageJS from '../img/skills/javascript.png';
-import NodeJs from '../img/skills/node-express.png';
-import ReactJS from '../img/skills/react.png';
-import VueJS from '../img/skills/vue.png';
-import Tailwind from '../img/skills/tailwind.png';
-import Bootstrap from '../img/skills/bootstrap.png'
+import ImageJS from '../assets/img/skills/javascript.png';
+import NodeJs from '../assets/img/skills/node-express.png';
+import ReactJS from '../assets/img/skills/react.png';
+import VueJS from '../assets/img/skills/vue.png';
+import Tailwind from '../assets/img/skills/tailwind.png';
+import Bootstrap from '../assets/img/skills/bootstrap.png'
 
 export const workExperiences = [
   {
@@ -34,29 +34,11 @@ export const languangePrograms = [
     id: 0,
     image: ImageJS,
     nameLanguange: "Javascript",
-    descriptions: [ 
-      "• Looping data",
-      "• Javascript DOM",
-      "• Recursive",
-      "• Regex",
-      "• OOP",
-      "• ES6",
-      "• Statement & Conditional",
-      "• Asynchronous & Synchronous",
-      "• Function, Arrow Function, & Methods"
-    ]
   },
   {
     id: 1,
     image: NodeJs,
     nameLanguange: "Node & Express JS",
-    descriptions: [ 
-      "• MVC Concepts",
-      "• Route",
-      "• Controllers",
-      "• Connect to database SQL or MongoDB",
-      "• Make an API",
-    ]
   },
 
 ]
@@ -66,50 +48,20 @@ export const frameworkPrograms = [
     id:0,
     image: ReactJS,
     nameFramework: "React JS",
-    descriptions: [
-      "• Mapping data",
-      "• UseState",
-      "• UseEffect",
-      "• UseContext",
-      "• Reusable component",
-      "• Fetch data with API using useEffect",
-      "• React router",
-      "• React helmet",
-      "• Lifecycle component"
-    ]
   },
   {
     id:1,
     image: VueJS,
     nameFramework: "Vue JS",
-    descriptions: [
-      "• Looping with v-for",
-      "• Fetch data with mounted lifecycle",
-      "• Conditional with v-if, and v-else",
-      "• Reusable Component",
-      "• Vue router",
-      "• State management with vuex"
-    ]
   },
   {
     id:2,
     image: Tailwind,
     nameFramework: "Tailwind CSS",
-    descriptions: [
-      "• Responsive web design",
-      "• Made design with flexbox",
-      "• Slicing HTML and CSS with tailwind",
-      "• Using tailwind config for library",
-    ]
   },
   {
     id:3,
     image: Bootstrap,
     nameFramework: "Bootstrap CSS",
-    descriptions: [
-      "• Responsive web design",
-      "• Made design with flexbox",
-      "• Slicing HTML and CSS with bootstrap",
-    ]
   }
 ]

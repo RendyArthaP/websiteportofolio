@@ -27,7 +27,7 @@ const ListPortofolio = ({item}) => {
       </div>
       <a 
         href={item.linkDeploy}
-        className="bg-button mx-auto w-full text-sm text-white font-montserrat p-1 rounded text-center mt-2"
+        className="bg-button mt-3 hover:bg-white hover:text-button focus:outline-none w-full h-11 text-center rounded py-2 my-1 shadow-2xl font-poppins text-white text-base"
       >
         Demo Apps
       </a>
