@@ -35,14 +35,16 @@ const Portofolio = () => {
           Portofolio
         </h1>
         <div 
-          className="flex flex-col flex-wrap md:flex-row md:justify-center"
+          className=""
         >
-          {!!dataPorto && dataPorto.map((item) => (
-            <ListPortofolio 
-              item={item} 
-              key={item._id}
-            />
-          ))}
+          <div className="flex flex-col flex-wrap md:flex-row md:justify-center">
+            {!!dataPorto && dataPorto.map((item) => (
+              <ListPortofolio 
+                item={item} 
+                key={item._id}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

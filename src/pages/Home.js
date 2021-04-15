@@ -1,10 +1,10 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom';
 import imageProfile from '../img/profile1.png'
-import Circle from '../ornaments/Circle';
-import Dot from '../ornaments/Dot';
-import Triangle from '../ornaments/Triangle/Triangle';
-import Wave from '../ornaments/Wave/Wave';
+import Circle from '../assets/ornaments/Circle';
+import Dot from '../assets/ornaments/Dot';
+import Triangle from '../assets/ornaments/Triangle/Triangle';
+import Wave from '../assets/ornaments/Wave/Wave';
 
 const Home = () => {
   // document.addEventListener("mousemove", parallax);

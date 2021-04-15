@@ -3,13 +3,10 @@ import React, { useState } from 'react'
 const ListPortofolio = ({item}) => {
   const [readMore, setReadMore] = useState(true)
   const handleReadMore = item.description.slice(0, 100)
-  const handleLiveServer = () => {
-    console.log(item.linkDeploy)
-  }
 
   return (
     <div 
-      className="p-4 bg-content rounded flex flex-col my-2 w-full h-auto md:w-64 md:mx-6 lg:mx-5" 
+      className="p-4 bg-content rounded flex flex-col my-2 w-full h-auto shadow-xl md:w-64 md:mx-6 lg:mx-5" 
     >
       <img 
         src={item.imagePortofolio} 

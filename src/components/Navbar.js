@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from "react-router-dom";
-import Hamburger from '../icons/Hamburger';
+import Hamburger from '../assets/icons/Hamburger';
 
 const Navbar = () => {
   const [navbarMobile, setNavbarMobile] = useState(false)
