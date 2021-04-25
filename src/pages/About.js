@@ -8,7 +8,7 @@ import Skills from '../components/Skills'
 import WorkExperience from '../components/WorkExperience'
 import { useHistory } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
-import RendyCV from '../assets/img/cv/rendycv.pdf'
+import RendyCV from '../assets/img/cv/rendycv (2).pdf'
 
 const About = () => {
   const history = useHistory()
@@ -18,6 +18,7 @@ const About = () => {
     if(!isLoggedIn) {
       history.push("/")
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
